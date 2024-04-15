@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade</title>
+</head>
+<body>   
+</body>
+<script>
+document.write("<center>")
+document.write("<h1 color='#1E90FF' size='4'>INSS</h1>")
+$salario = prompt("Qual é o seu salário?")
+$porcentagem = ("")
+$porcentagem_aliquota = ("")
+
+
+
+if($salario < 1100.01){
+
+$porcentagem = "7.5%"
+$porcentagem_aliquota = 0.075
+}
+
+
+else if($salario < 2203.49){
+
+$porcentagem = "9%"
+$porcentagem_aliquota = 0.09
+
+}
+
+else if($salario < 3305.23){
+
+$porcentagem = "12%"
+$porcentagem_aliquota = 0.12
+
+}
+
+else{ 
+
+$porcentagem = "14%"
+$porcentagem_aliquota = 0.14
+
+}
+
+$valor_descontadoINSS = ($salario * $porcentagem_aliquota)
+
+document.write("Salário= ", $salario, " ")
+document.write("Porcentagem= ", $porcentagem, " ")
+document.write("Valor descontado= ", $valor_descontadoINSS)
+
+
+document.write("</center>")
+
+
+
+</script>
+
+</html>
